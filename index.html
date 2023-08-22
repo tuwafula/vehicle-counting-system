@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vehicle Counting System</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <main class="header">
+      <nav class="nav">
+        <div class="nav__logo">
+          <img src="logo.svg" alt="logo" />
+        </div>
+        <div>
+          <i class="fa fa-bars menu-toggle" aria-hidden="true"></i>
+          <div>
+            <ul class="nav__links active">
+              <li class="nav__item">
+                <a class="nav__link" href="#section--1">home</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#section--2">operations</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#footer">info</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="welcome" id="section--1">
+        <div class="welcome__container">
+          <div class="welcome__header">
+            <h1>
+              Welcome to our
+              <span class="skew nowrap"> vehicle counting</span> system
+            </h1>
+
+            <button class="btn btn--scroll-to">previous records</button>
+          </div>
+
+          <div class="welcome__image">
+            <figure>
+              <img src="car.jpg" width="200" height="200" alt="car image" />
+              <figcaption class="hide">An image of a car</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="counter" id="section--2">
+      <h1 class="counter__header">Counter Section</h1>
+      <h2>current time is...</h2>
+      <div class="counter__time">
+        <p class="counter__time--hour">23</p>
+        <p class="counter__time--minutes">23</p>
+        <p class="counter__time--seconds">23</p>
+      </div>
+      <div class="counter__content">
+        <p class="date">
+          current counting session began at
+          <span class="start__time">15th tuesday, 2023</span>
+        </p>
+        <div class="count">
+          <p class="counter__content--count-tab">Current count: 00</p>
+        </div>
+        <div class="counter__btns">
+          <button class="btn counter__btns--btn-add">Add</button>
+          <button class="btn counter__btns--btn-save">Save</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer" id="footer">
+      <h1 class="footer__header">Information Section</h1>
+
+      <div class="footer__prevsaved">
+        <p class="footer__p">These are the previously saved counts</p>
+        <div class="footer__prevsaved--counts">
+          <p class="footer__prevsaved--counts-count">23</p>
+          <p class="footer__prevsaved--counts-count">45</p>
+          <p class="footer__prevsaved--counts-count">23</p>
+        </div>
+      </div>
+
+      <p class="footer__copyright">&copy;2023 by Tushde</p>
+    </section>
+  </body>
+</html>
